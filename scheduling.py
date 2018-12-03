@@ -3,14 +3,11 @@ import numpy as np
 import random
 from random import randint
 
-
 #n is the number of shifts
 n=30
 dic={}
 
 def testCases(n):
-
-	
 
 	for i in range(1,n+1):
 
@@ -40,7 +37,6 @@ def testCases(n):
 
 # supervisoryCommittee=[]
 
-
 def main():
 
 	dic=testCases(n)
@@ -63,7 +59,6 @@ def main():
 
 	#for i in range(len(sortedIntervals)):
 		#print(sortedIntervals[i][0])
-
 	a=0
 
 	while(a<len(dupe)):
@@ -77,21 +72,16 @@ def main():
 				temp.append(dupe[j])
 
 		if len(temp)==0:
-
 			supervisoryCommittee.append(dupe[a])
 			a+=1
 
 		else:
-
 			temp=sorted(temp, key=lambda x:(x[1]))
 			supervisoryCommittee.append(temp[0])
 
 			a+=len(temp)+1
 
-
 	return supervisoryCommittee
-
-
 
 
 for i in range(1000):
