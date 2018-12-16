@@ -10,16 +10,13 @@ dic={}
 def testCases(n):
 
 	for i in range(1,n+1):
-
 		start=randint(1,120)
 		end=start+5
 
 		dic[i]=[start,end]
-
 	return dic
 
 #print(testCases(20))
-
 
 def main():
 
@@ -28,28 +25,22 @@ def main():
 
 	for i in dic.values():
 		intervals.append(i)
-
 	#print(intervals)
 
 	sortedIntervals=sorted(intervals, key=lambda x: (x[1]))
-
 	print(sortedIntervals)
 
 	committeeCount=0
 	dupe=sortedIntervals
-
+	
 	supervisoryCommittee=[]
 
 	a=0
 
 	while(a<len(dupe)):
-
 		temp=[]
-
 		for j in range(a+1,len(dupe)):
-
 			if dupe[j][0]<dupe[a][1]:
-
 				temp.append(dupe[j])
 
 		if len(temp)==0:
@@ -66,7 +57,7 @@ def main():
 
 
 for i in range(1000):
-
+	
 	print(i)
 	print(main())
 
