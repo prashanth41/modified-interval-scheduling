@@ -21,22 +21,6 @@ def testCases(n):
 #print(testCases(20))
 
 
-
-# intervals=[]
-
-# for i in dic.values():
-# 	intervals.append(i)
-
-# #print(intervals)
-
-# sortedIntervals=sorted(intervals, key=lambda x: (x[1]))
-# #print(sortedIntervals)
-
-# committeeCount=0
-# temp=sortedIntervals
-
-# supervisoryCommittee=[]
-
 def main():
 
 	dic=testCases(n)
@@ -49,7 +33,6 @@ def main():
 
 	sortedIntervals=sorted(intervals, key=lambda x: (x[1]))
 
-	#sortedIntervals=[[1, 6], [3, 8], [11, 16], [12, 17], [17, 22], [17, 22], [17, 22], [21, 26], [25, 30], [25, 30]]
 	print(sortedIntervals)
 
 	committeeCount=0
@@ -57,8 +40,6 @@ def main():
 
 	supervisoryCommittee=[]
 
-	#for i in range(len(sortedIntervals)):
-		#print(sortedIntervals[i][0])
 	a=0
 
 	while(a<len(dupe)):
